@@ -9,6 +9,8 @@ app.use(express.json());
 
 app.post('/products', mongoosePractice.createProduct);
 
+app.get('/products', mongoosePractice.getProducts);
+
 // app.post('/products', mongoPractice.createProduct);
 
 // app.get('/products', mongoPractice.getProducts);
