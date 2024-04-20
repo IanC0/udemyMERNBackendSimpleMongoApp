@@ -15,7 +15,7 @@ const createProduct = async (req, res, next) => {
         price: req.body.price
     });
     const result = await createdProduct.save()
-    console.log(result)
+    console.log(typeof createdProduct._id, typeof createdProduct.id) 
     res.json(result); 
 };
 
